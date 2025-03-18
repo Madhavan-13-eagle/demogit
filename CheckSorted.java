@@ -4,12 +4,12 @@ public class CheckSorted{
         System.out.println(isSorted(arr,0));
         System.out.println(search(arr,9,0));
     }
-    public static boolean isSorted(int []arr,int idx){
-        if(idx==arr.length-1){
-            return true;
-        }
-        return (arr[idx]<arr[idx+1])&&isSorted(arr,idx+1); 
-    }
+    // public static boolean isSorted(int []arr,int idx){
+    //     if(idx==arr.length-1){
+    //         return true;
+    //     }
+    //     return (arr[idx]<arr[idx+1])&&isSorted(arr,idx+1); 
+    // }
     public static int search(int[]arr,int target,int idx){
         if(arr[idx]==target){
             return idx;
